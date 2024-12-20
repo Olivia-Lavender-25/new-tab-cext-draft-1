@@ -10,6 +10,12 @@
             box-sizing: border-box;
         }
 
+        body{
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; */
+        }
         .search-bar {
             margin-top: 30px;
             display: grid;
@@ -117,7 +123,7 @@
         .quick-links {
             width: 90vw;
             margin: auto;
-            height: 60vw
+            
         }
 
         img {
@@ -158,11 +164,11 @@
 
 <body>
     <div class="search-engine"
-        style="display: flex; flex-direction: row; width: 100vw; height: 150px; align-items: center; justify-content: center">
-        <img class="img" src="./Assets/Images/Search Engines/Google Icon.webp" style="height: 150px; width: 150px">
+        style="margin: 100px 0 0 0; display: flex; flex-direction: row; width: 100vw; height: 150px; align-items: center; justify-content: center">
+        <img class="img" src="./Assets/Images/Search Engines/Google Icon.webp" style="height: 80px; width: 80px">
     </div>
-    <div class="search-bar" style="margin-bottom: 30px;">
-        
+    <div class="search-bar" style="margin-bottom: 100px;">
+
         <label for="inp" class="inp">
             <!-- <span>Advanced Search Query Aggregate Engine</span> -->
             <input type="text" id="inp" placeholder="&nbsp;">
@@ -174,7 +180,7 @@
     <div class="quick-links" style="display: flex; flex-direction: row; flex-wrap: wrap;">
 
 
-        <div
+        <!-- <div
             style="width: 33%; height: 100%; overflow: scroll; display: flex; flex-direction: column; border: 1px solid blue">
 
 
@@ -187,16 +193,16 @@
         <div
             style="width: 33%; height: 100%; overflow: scroll; display: flex; flex-direction: column; border: 1px solid blue">
 
-        </div>
+        </div> -->
 
 
 
 
     </div>
     </div>
-
+    
     <script src="newtab.js">
-        
+
     </script>
 </body>
 
