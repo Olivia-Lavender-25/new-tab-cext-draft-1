@@ -16,20 +16,20 @@ let favourites = [
     //     url: `https://google.com/`,
     //     faviconURL: ``,
     // },
-    // {
-    //     title: `TradingView Charts`,
-    //     url: `https://www.tradingview.com/chart/`,
-    //     faviconURL: `https://static.tradingview.com/static/images/favicon.ico`,
-    // },
-    // {
-    //     title: `CIMB Bank`,
-    //     url: `https://www.cimbclicks.com.my/`,
-    //     faviconURL: `https://www.cimbclicks.com.my/assets/cimb-favicon.ico`,
-    // },
+    {
+        title: `TradingView Charts`,
+        url: `https://www.tradingview.com/chart/`,
+        faviconURL: `https://static.tradingview.com/static/images/favicon.ico`,
+    },
+    {
+        title: `CIMB Bank`,
+        url: `https://www.cimbclicks.com.my/`,
+        faviconURL: `https://www.cimbclicks.com.my/assets/cimb-favicon.ico`,
+    },
     {
         title: `Google Maps`,
         url: `https://www.google.com/maps`,
-        faviconURL: ``,
+        faviconURL: `https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-map-icon.png`,
     },
     {
         title: `i3`,
@@ -37,7 +37,7 @@ let favourites = [
         faviconURL: `https://cdn2.i3investor.com/web/img/icon/i3investor16.png`,
     },
     {
-        title: `IYF Chinese Drama `,
+        title: `IYF `,
         url: `https://www.iyf.tv/`,
         faviconURL: `https://www.ondemandchina.com/favicon.ico`,
     },
@@ -47,7 +47,7 @@ let favourites = [
         faviconURL: `https://cnys.tv/upload/site/20241108-1/f15406810699ffec5f80135c212d08de.png`,
     },
     {
-        title: `Youtube Downloader`,
+        title: `YT Downloader`,
         url: `https://yt5s.is/convert`,
         faviconURL: ``,
     },
@@ -105,7 +105,7 @@ favourites.map((f, i) => {
     // </a>`
     let item = `<a href="${favourites_item_url}">
         <div class="shortcut-item"
-            style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; width: 150px; height: 100px; direction:1row; border: 0px solid blue; border-radius: 5px; margin-bottom: 50px; ">
+            style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; width: 140px; height: 100px; direction:1row; border: 0px solid blue; border-radius: 5px; margin-bottom: 50px; ">
             <div style=" ">
                 <div class="favicon">
                     <img src="${favourites_item_favicon ? favourites_item_favicon : default_favicon}"
@@ -113,7 +113,7 @@ favourites.map((f, i) => {
                 </div>
 
             </div>
-            <div class="title" style="width: 100%; font-size: 13px; display: flex; align-items: center; justify-content: center">
+            <div class="title" style="width: 100%; font-size: 18px; display: flex; align-items: center; justify-content: center">
                 <p style="text-align: center">${favourites_item_title}</p>
             </div>
 
