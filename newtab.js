@@ -103,9 +103,9 @@ favourites.map((f, i) => {
     //         <div class="custom-data"></div>
     //     </div>
     // </a>`
-    let item = `<a href="${favourites_item_url}">
+    let item = `<a href="${favourites_item_url}" style="width: 110px; height: 120px;">
         <div class="shortcut-item"
-            style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; width: 140px; height: 100px; direction:1row; border: 0px solid blue; border-radius: 5px; margin-bottom: 50px; ">
+            style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; width: 110px; height: 120px; direction:1row; border: 0px solid blue; border-radius: 5px; ">
             <div style=" ">
                 <div class="favicon">
                     <img src="${favourites_item_favicon ? favourites_item_favicon : default_favicon}"
@@ -113,8 +113,8 @@ favourites.map((f, i) => {
                 </div>
 
             </div>
-            <div class="title" style="width: 100%; font-size: 18px; display: flex; align-items: center; justify-content: center">
-                <p style="text-align: center">${favourites_item_title}</p>
+            <div class="title" style="width: 100%; font-size: 14.5px; display: flex; align-items: center; justify-content: center">
+                <p style="text-align: center;   text-overflow: ellipsis; width: 80%">${favourites_item_title}</p>
             </div>
 
 
@@ -122,7 +122,7 @@ favourites.map((f, i) => {
         </div>
     </a>`
     let itemD = document.createElement('div')
-    itemD.style = `height: 100px`
+    itemD.style = `width: 110px; height: 120px;`
     itemD.innerHTML = item
     document.body.querySelector('.quick-links')/* .firstElementChild */.appendChild(itemD)
 
