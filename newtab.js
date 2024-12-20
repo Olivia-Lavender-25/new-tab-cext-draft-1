@@ -47,22 +47,22 @@ let favourites = [
         faviconURL: `https://cnys.tv/upload/site/20241108-1/f15406810699ffec5f80135c212d08de.png`,
     },
     {
-        title: `Youtube Downloader & Converter`,
+        title: `Youtube Downloader`,
         url: `https://yt5s.is/convert`,
         faviconURL: ``,
     },
     {
-        title: `Google - NoteBook LM`,
+        title: `NoteBook LM`,
         url: `https://notebooklm.google.com/`,
         faviconURL: `https://notebooklm.google/_/static/branding/v4/light_mode/favicon/favicon.svg`,
     },
     {
-        title: `Google - Colab`,
+        title: `Google Colab`,
         url: `https://colab.research.google.com/`,
         faviconURL: `https://ssl.gstatic.com/colaboratory-static/common/72333aafcb242d934342c5625a20e095/img/favicon.ico`,
     },
     {
-        title: `DeerPark AI - Buddhist Sutra`,
+        title: `DeerPark AI`,
         url: `https://deerpark.ai/read/`,
         faviconURL: `data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBmaWxsPSIjNDU1QTY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgMTFoMTh2MUgzem0xNC42Mi0xLTIuMjktNi4xYy0uMTktLjUtLjc0LS43Ny0xLjI1LS42TDEyIDRsLTIuMDktLjdjLS41MS0uMTctMS4wNi4xLTEuMjUuNkw2LjM4IDEwaDExLjI0em0tMS4xMiAzYy0xLjY2IDAtMy4wNCAxLjE2LTMuNCAyLjcxLS44NC0uMzYtMS42Mi0uMjYtMi4yLS4wMUEzLjUwMyAzLjUwMyAwIDAgMCA3LjUgMTNDNS41NyAxMyA0IDE0LjU3IDQgMTYuNVM1LjU3IDIwIDcuNSAyMGMxLjg0IDAgMy4zMy0xLjQyIDMuNDctMy4yMi4zLS4yMSAxLjA5LS42IDIuMDYuMDIuMTYgMS43OSAxLjY0IDMuMiAzLjQ3IDMuMiAxLjkzIDAgMy41LTEuNTcgMy41LTMuNVMxOC40MyAxMyAxNi41IDEzem0tOSA2YTIuNSAyLjUgMCAwIDEgMC01IDIuNSAyLjUgMCAwIDEgMCA1em05IDBhMi41IDIuNSAwIDAgMSAwLTUgMi41IDIuNSAwIDAgMSAwIDV6Ii8+PC9zdmc+`,
     },
@@ -105,7 +105,7 @@ favourites.map((f, i) => {
     // </a>`
     let item = `<a href="${favourites_item_url}">
         <div class="shortcut-item"
-            style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; width: 200px; height: 100px; direction:1row; border: 0px solid blue; border-radius: 5px; margin-bottom: 50px; ">
+            style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; width: 150px; height: 100px; direction:1row; border: 0px solid blue; border-radius: 5px; margin-bottom: 50px; ">
             <div style=" ">
                 <div class="favicon">
                     <img src="${favourites_item_favicon ? favourites_item_favicon : default_favicon}"
@@ -113,7 +113,7 @@ favourites.map((f, i) => {
                 </div>
 
             </div>
-            <div class="title" style="width: 100%; font-size: 14px; display: flex; align-items: center; justify-content: center">
+            <div class="title" style="width: 100%; font-size: 13px; display: flex; align-items: center; justify-content: center">
                 <p style="text-align: center">${favourites_item_title}</p>
             </div>
 
